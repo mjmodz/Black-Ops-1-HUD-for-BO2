@@ -1,0 +1,16 @@
+{
+  stateMap "passthrough"; // TODO
+
+  vertexShader 4.0 "pimp_shader_vertcolorsimple_20733cbe.hlsl"
+  {
+  }
+
+  pixelShader 4.0 "pimp_shader_vertcolorsimple_8731b04d.hlsl"
+  {
+    colorMapSampler = material.colorMap;
+  }
+
+  vertex.position = code.position;
+  vertex.color[0] = code.color;
+  vertex.texcoord[0] = code.texcoord[0];
+}
